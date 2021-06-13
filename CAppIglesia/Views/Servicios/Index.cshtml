@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewData["Title"] = "Sistema Contable IBPD";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-6 ">
+            <h4> Sevicios Utilizados</h4>
+        </div>
+        <div class="col-6 text-right ">
+            <a asp-action="Create" class="btn btn-success">
+                <i class="fas fa-plus">Registrar Servicio</i>
+            </a>
+        </div>
+
+    </div>
+    <br />
+    <br />
+
+
+    <div class="col">
+        <table id="tbltablaS" class="table table-bordered table-striped ">
+            <thead>
+                <tr>
+                    <th>Nombre De Servicios</th>
+                    <th>Cantidad</th>
+                    <th>Fecha De Pagos</th>
+                    <th>Opcions</th>
+
+                </tr>
+
+            </thead>
+
+
+        </table>
+    </div>
+</div>
+
+@section Scripts{
+
+    <script src="~/js/Servicio.js"></script>
+}
+
+
+

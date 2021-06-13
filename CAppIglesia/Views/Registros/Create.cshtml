@@ -1,0 +1,91 @@
+﻿@model CAppIglesia.Models.Registros
+@{
+    ViewData["Title"] = "Sistema Contable IBPD";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+
+<div class="container">
+    <div class="row card px-2 ax-2 mx-4 border">
+
+        <div class="card-header ">
+            <h1 class="text-left"> Registrar Donante</h1>
+        </div>
+        <br />
+        <div class="col-8 offset-2 ">
+            <form method="post" asp-action="Create">
+                <div asp-validation-summary="ModelOnly " class="text-danger"></div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="PrimerNombre" class="label-control"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="PrimerNombre" class="form-control" />
+                        <span asp-validation-for="PrimerNombre"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+
+                    <div class="col-4">
+                        <label asp-for="PrimerApellido" class="label-control"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="PrimerApellido" class="form-control" />
+                        <span asp-validation-for="PrimerApellido"></span>
+                    </div>
+
+                </div>
+
+                <div class="form-group row">
+
+                    <div class="col-4">
+                        <label asp-for="Concepto" class="label-control"></label>
+
+                    </div>
+
+                    <div class="col-8">
+                        <input asp-for="Concepto" class="form-control" />
+                        <span asp-validation-for="Concepto"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Cantidad" class="label-control"></label>
+
+                    </div>
+
+                    <div class="col-8">
+                        <input asp-for="Cantidad" class="form-control" />
+                        <span asp-validation-for="Cantidad"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+
+                    <div class="col-4">
+                        <label asp-for="FechaDePago" class="label-control"></label>
+                    </div>
+
+                    <div class="col-8">
+                        <input asp-for="FechaDePago" class="form-control" />
+                        <span asp-validation-for="FechaDePago"></span>
+                    </div>
+                </div>
+                <div class="form-group row ">
+
+                    <div class=" offset-6">
+                        <partial name="_VistaCrearVolver" />
+                    </div>
+
+
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+

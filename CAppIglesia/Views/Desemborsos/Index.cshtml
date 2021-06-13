@@ -1,0 +1,95 @@
+﻿@model CAppIglesia.Models.ModelVm.CarteraVM
+@{
+    ViewData["Title"] = "Sistema Contable IBPD";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="conteiner-fluid">
+
+    <div class="row ">
+        <div class="col-6 col-lg-3">
+            <div class="small-box bg-info">
+                <div class="inner">
+                    <h3>$@ViewBag.cantidad</h3>
+
+                    <p>Cantidad de diezmorecolectadas</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-bag"></i>
+                </div>
+                <a asp-controller="Registros" asp-action="Index" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <div class="col-6 col-lg-3">
+            <div class="small-box bg-info">
+                <div class="inner">
+                    <h3>$@ViewBag.cantidadofrenda</h3>
+
+                    <p>Cantidad de ofrendas recolectadas</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-bag"></i>
+                </div>
+                <a asp-controller="Ofrendas" asp-action="Index" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="col-6 col-lg-4">
+            <div class="small-box bg-info">
+                <div class="inner">
+                    <h3>$@ViewBag.cantidasERVICIOS</h3>
+                    <p>Cantidad de servicios Pagados</p>
+
+                </div>
+                <div class="icon">
+                    <i class="ion ion-bag"></i>
+                </div>
+                <a asp-controller="Servicios" asp-action="Index" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="col-6 col-lg-4">
+            <div class="small-box bg-success">
+                <div class="inner">
+                    <h3>
+                        $
+                        @ViewBag.totalRecolectaos
+                    </h3>
+                    <p>Total Recolectado</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-bag"></i>
+                </div>
+                <a class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+            <div class="small-box bg-warning">
+                <div class="inner">
+                    <h3>$@ViewBag.totalgeneral</h3>
+                    <p>Total General</p>
+
+
+                </div>
+                <div class="icon">
+                    <i class="ion ion-bag"></i>
+                </div>
+                <a class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <div class="col-6 col-lg-3">
+            <div class="small-box bg-danger">
+                <div class="inner">
+                    <h3>$@ViewBag.Gastototal</h3>
+                    <p> Gasto Total </p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-bag"></i>
+                </div>
+                <a class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+

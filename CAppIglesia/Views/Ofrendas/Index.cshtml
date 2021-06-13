@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewData["Title"] = "Sistema Contable IBPD";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<br />
+
+<div class="container">
+    <div class="row">
+        <div class="col-6 ">
+            <h4> Ofrendas Recolectadas</h4>
+        </div>
+        <div class="col-6 text-right ">
+            <a asp-action="Create" class="btn btn-success">
+                <i class="fas fa-plus">Registrar Ofrenda</i>
+            </a>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="col">
+        <table id="tbltablaO" class="table table-bordered table-striped table-striped ">
+
+            <thead>
+                <tr>
+
+                    <th>Cantidad</th>
+                    <th>Fecha De Ofrendas</th>
+                    <th>Opcions</th>
+
+                </tr>
+            </thead>
+
+        </table>
+    </div>
+</div>
+
+@section Scripts{
+<script src="~/js/Ofrendas.js">
+    
+</script>
+}
+
+
+
+
+

@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "Sistema Contable IBPD";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<br />
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h2 class="text-primary">Slider</h2>
+        </div>
+
+        <div class="col-6 text-right">
+            <a asp-action="Create" class="btn btn-primary"><i class="fas fa-plus">Agregar Nueva Imagen</i></a>
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+        <table id="tblslaider" class="table  table-bordered" style="width:100%;">
+
+            <thead>
+
+                <tr>
+                  
+                    <th>Titulo</th>
+                    <th></th>
+
+
+                </tr>
+            </thead>
+
+        </table>
+  
+</div>
+
+@section Scripts{
+    <script src="~/js/slaiders.js"></script>
+
+}
+
